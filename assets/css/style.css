@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Pirata+One&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap");
+
 * {
     padding: 0;
     margin: 0;
@@ -8,4 +10,154 @@
 
 a {
     text-decoration: none;
+}
+
+body {
+    font-family: "Roboto Mono", sans-serif;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+section {
+    width: 100%;
+    height: 100svh;
+}
+
+h1 {
+    text-transform: uppercase;
+    font-family: "Pirata One";
+    color: #fff;
+    font-weight: 300;
+}
+
+main {
+    width: 100%;
+    height: fit-content;
+}
+
+.hero {
+    background: url(../images/hero.jpg) 50% 50% no-repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero p {
+    text-transform: uppercase;
+    text-align: center;
+    padding: 0 2vw;
+    font-size: 1vw;
+    font-weight: 800;
+    color: #fff;
+}
+
+.about {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5vw 14vw;
+    background-color: #366790;
+}
+
+.about h1 {
+    color: #041b2d;
+    line-height: 90%;
+    font-size: 11vw;
+}
+
+.about-img {
+    width: 29vw;
+    height: 34vw;
+    border: 2px solid #000;
+}
+
+.sticky {
+    position: relative;
+    perspective: 1000px;
+    perspective-origin: left center;
+}
+
+.intro {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 100%;
+    height: 100%;
+    padding: 1em;
+    display: flex;
+    z-index: 0;
+}
+
+.intro-col {
+    display: flex;
+    flex: 1;
+}
+
+.intro-col p {
+    flex: 1;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+.intro-col p span {
+    display: inline-block;
+}
+
+.intro-col:nth-child(2) p {
+    text-align: right;
+}
+
+.img-1,
+.img-2,
+.img-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.img-2 {
+    clip-path: polygon(40% 25%, 60% 25%, 60% 75%, 40% 75%);
+}
+
+.img-3 {
+    clip-path: polygon(50% 25%, 50% 25%, 50% 75%, 50% 75%);
+}
+
+.img-3 img {
+    transform-origin: bottom center;
+    transform: scale(3);
+}
+
+.copy {
+    width: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform-origin: top left;
+    transform: translate(-50%, -50%) rotateX(75deg) scale(0.6);
+    opacity: 0;
+}
+
+.copy h1 {
+    font-size: 5vw;
+    text-align: center;
+    text-shadow: 0 2px 8px rgba(0, 0, 0, 0.6), 0 0 15px rgba(0, 0, 0, 0.4);
+}
+
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 7vw;
+    line-height: 190%;
+    background-color: #ce6813;
 }
