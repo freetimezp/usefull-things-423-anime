@@ -1,77 +1,195 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
     <head>
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
         <link rel="stylesheet" href="./assets/css/style.css" />
-        <title>Project</title>
+
+        <title>Blades of Fate</title>
     </head>
 
     <body>
-        <main class="container">
-            <section class="hero">
-                <h1>Blades of Fate</h1>
+        <div class="noise"></div>
+        <div class="vignette"></div>
 
-                <p>
-                    Lorem, ipsum dolor sit amet consectetur adipisicing elit. Consectetur, quaerat impedit! Illum,
-                    eligendi quasi? Eius.
-                </p>
-            </section>
-            <section class="about">
-                <div class="about-img">
-                    <img src="./assets/images/photo-1.jpg" alt="" />
+        <div class="loader">
+            <div class="loader-line"></div>
+
+            <div class="loader-counter">
+                <span>00</span>
+                <small>%</small>
+            </div>
+
+            <p>Awakening the blade...</p>
+        </div>
+
+        <main class="container">
+            <!-- HERO -->
+            <section class="hero">
+                <div class="hero-bg"></div>
+
+                <div class="hero-top">
+                    <span>武士 / 01</span>
+                    <span>THE LAST BLADE</span>
                 </div>
-                <div class="about-copy">
+
+                <div class="hero-content">
+                    <div class="hero-kicker">
+                        <span></span>
+                        A TALE WRITTEN IN BLOOD
+                    </div>
+
                     <h1>
-                        Beneath <br />
-                        the Quiet
+                        Blades
+                        <span>of Fate</span>
                     </h1>
+
+                    <p>
+                        Every warrior carries a story. Every blade remembers the
+                        hand that held it.
+                    </p>
+                </div>
+
+                <div class="hero-bottom">
+                    <div class="hero-scroll">
+                        <span>Scroll to enter</span>
+                        <div class="scroll-line">
+                            <i></i>
+                        </div>
+                    </div>
+
+                    <div class="hero-year">
+                        <span>XVII</span>
+                        <small>ERA</small>
+                    </div>
                 </div>
             </section>
+
+            <!-- ABOUT -->
+            <section class="about">
+                <div class="about-bg-text">刀</div>
+
+                <div class="about-img">
+                    <div class="image-frame"></div>
+                    <img src="./assets/images/photo-1.png" alt="" />
+                </div>
+
+                <div class="about-copy">
+                    <span class="section-number">02 — THE WARRIOR</span>
+
+                    <h2>
+                        Beneath
+                        <br />
+                        the <em>Quiet</em>
+                    </h2>
+
+                    <p>
+                        Before the battle comes silence. Before the strike comes
+                        breath. The strongest blade is the one that knows when
+                        not to move.
+                    </p>
+
+                    <div class="about-line"></div>
+
+                    <span class="about-jp">静けさの中に力がある</span>
+                </div>
+            </section>
+
+            <!-- STICKY -->
             <section class="sticky">
+                <div class="sticky-bg-text">運命</div>
+
                 <div class="intro">
                     <div class="images">
                         <div class="img-1">
                             <img src="./assets/images/photo-2.jpg" alt="" />
                         </div>
+
                         <div class="img-2">
                             <img src="./assets/images/photo-3.jpg" alt="" />
                         </div>
+
                         <div class="img-3">
                             <img src="./assets/images/photo-4.jpg" alt="" />
                         </div>
                     </div>
 
-                    <div class="intro-col">
+                    <div class="intro-col intro-left">
+                        <div class="story-label">
+                            <span>03</span>
+                            <i></i>
+                            CHRONICLES
+                        </div>
+
                         <p>Breath of the Sun</p>
                         <p>Chaos of Days</p>
                     </div>
 
-                    <div class="intro-col">
+                    <div class="intro-col intro-right">
                         <p>The Final Form Awaits</p>
+
+                        <div class="story-meta">
+                            <span>THE PATH</span>
+                            <span>OF THE</span>
+                            <span>WARRIOR</span>
+                        </div>
                     </div>
                 </div>
 
-                <div class="copy-trigger" style="position: absolute; top: 300%; width: 1px; height: 1px"></div>
+                <div
+                    class="copy-trigger"
+                    style="
+                        position: absolute;
+                        top: 300%;
+                        width: 1px;
+                        height: 1px;
+                    "
+                ></div>
 
                 <div class="copy">
-                    <h1>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, quisquam ullam? Deserunt cum
-                        ducimus aperiam quae quaerat.
-                    </h1>
+                    <span class="copy-number">04</span>
+
+                    <h2>
+                        Fate does not
+                        <br />
+                        choose the warrior.
+                    </h2>
+
+                    <div class="copy-divider"></div>
+
+                    <p>The warrior chooses how to face it.</p>
                 </div>
             </section>
 
+            <!-- FOOTER -->
             <section class="footer">
-                <h1>
-                    Rise Until <br />
-                    Breath Ends
-                </h1>
+                <div class="footer-bg"></div>
+
+                <div class="footer-kanji">終</div>
+
+                <div class="footer-content">
+                    <span class="footer-label">
+                        THE END IS ONLY ANOTHER BEGINNING
+                    </span>
+
+                    <h2>
+                        Rise Until
+                        <br />
+                        <em>Breath Ends</em>
+                    </h2>
+
+                    <div class="footer-bottom">
+                        <span>BLADES OF FATE</span>
+                        <span>© XVII</span>
+                    </div>
+                </div>
             </section>
         </main>
 
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
 
         <script src="https://unpkg.com/lenis@1.3.16/dist/lenis.min.js"></script>
