@@ -280,13 +280,13 @@ document.addEventListener("DOMContentLoaded", () => {
             onUpdate: function () {
                 const progress = this.progress();
 
-                const left = gsap.utils.interpolate(40, 0, progress);
+                const left = gsap.utils.interpolate(50, 0, progress);
 
-                const right = gsap.utils.interpolate(60, 100, progress);
+                const right = gsap.utils.interpolate(50, 100, progress);
 
-                const top = gsap.utils.interpolate(25, 0, progress);
+                const top = gsap.utils.interpolate(50, 0, progress);
 
-                const bottom = gsap.utils.interpolate(75, 100, progress);
+                const bottom = gsap.utils.interpolate(50, 100, progress);
 
                 gsap.set(".img-2", {
                     clipPath: `

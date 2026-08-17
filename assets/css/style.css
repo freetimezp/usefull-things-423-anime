@@ -447,7 +447,7 @@ section {
 }
 
 .img-2 {
-    clip-path: polygon(40% 25%, 60% 25%, 60% 75%, 40% 75%);
+    clip-path: polygon(50% 25%, 50% 25%, 50% 75%, 50% 75%);
 }
 
 .img-3 {
@@ -477,7 +477,7 @@ section {
 
 .intro-col p {
     color: white;
-    font-size: 11px;
+    font-size: 18px;
     text-transform: uppercase;
     letter-spacing: 0.08em;
 }
@@ -486,18 +486,19 @@ section {
     display: flex;
     align-items: center;
     gap: 12px;
-    font-size: 10px;
+    font-size: 18px;
     letter-spacing: 0.25em;
 }
 
 .story-label span {
-    color: var(--red);
+    font-size: 20px;
+    color: #fff;
 }
 
 .story-label i {
     width: 30px;
     height: 1px;
-    background: var(--red);
+    background: #fff;
 }
 
 .story-meta {
@@ -629,7 +630,7 @@ section {
     justify-content: space-between;
     font-size: 10px;
     letter-spacing: 0.25em;
-    color: rgba(0, 0, 0, 0.7);
+    color: var(--cream);
 }
 
 /* =====================================================
