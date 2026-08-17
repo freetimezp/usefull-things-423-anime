@@ -717,6 +717,14 @@ section {
         font-size: 9px;
     }
 
+    .intro-col p.r-mobile {
+        transform: rotate(-90deg) translateY(-40px);
+    }
+
+    .intro-col.intro-right p {
+        transform: rotate(90deg) translateY(-60px) translateX(100px);
+    }
+
     .story-meta {
         display: none;
     }
